@@ -1,24 +1,18 @@
 {
     "filename": "~/Desktop/data.xlsx",
     "path": "~/Desktop",
-    "worksheet": "1-CPT data",
+    "worksheet": "3-Soil zone from CPT-RAW",
     "start_column": "B",
-    "end_column": "L",
-    "start_row": 9,
-    "end_row": 13,
+    "end_column": "T",
+    "start_row": 23,
+    "end_row": 40,
     "input": {
-        "J": "depth",
-        "K": "qc",
-        "L": "fs"
+        "B": "depth",
+        "H": "qc",
+        "I": "fs"
     },
     "output": {
-        "B": "depth",
-        "C": "qc",
-        "D": "fs"
-    },
-    "format": {
-        "J": "depth",
-        "K": "qc",
-        "L": "fs"
+        "T": "soil_zone",
+        "S": "ic"
     }
 }

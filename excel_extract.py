@@ -123,7 +123,7 @@ class ExcelExtractor:
             _input = {}
             _output = {}
             for val, col in row:
-                if self._json_config['format'] and col in global_format:
+                if self._json_config.get('format') and col in global_format:
                     _format[global_format[col]] = val
                 if col in input_format:
                     _input[input_format[col]] = val
