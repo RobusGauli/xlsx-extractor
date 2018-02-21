@@ -1,17 +1,24 @@
 {
     "filename": "~/Desktop/data.xlsx",
     "path": "~/Desktop",
-    "worksheet": "3-Soil zone from CPT-RAW",
-    "start_column": "C",
-    "end_column": "F",
-    "start_row": 23,
-    "end_row": 40,
+    "worksheet": "1-CPT data",
+    "start_column": "B",
+    "end_column": "L",
+    "start_row": 9,
+    "end_row": 13,
     "input": {
-        "C": "baseSoilDensity",
-        "Q": "totalStress"
+        "J": "depth",
+        "K": "qc",
+        "L": "fs"
     },
     "output": {
-        "E": "waterPressure",
-        "F": "effectiveStree"
+        "B": "depth",
+        "C": "qc",
+        "D": "fs"
+    },
+    "format": {
+        "J": "depth",
+        "K": "qc",
+        "L": "fs"
     }
 }

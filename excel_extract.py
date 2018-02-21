@@ -114,17 +114,21 @@ class ExcelExtractor:
         #get the input format
         input_format = self.requires('input') and self._json_config['input']
         output_format = self.requires('output') and self._json_config['output']
-
+        if 'format' in self._json_config:
+            global_format = self._json_config['format']
         _result = []
         for row in self.get_rows():
+            _format = {}
             _input = {}
             _output = {}
             for val, col in row:
+                if self._json_config['format'] and col in global_format:
+                    _format[global_format[col]] = val
                 if col in input_format:
                     _input[input_format[col]] = val
-                elif col in output_format:
+                if col in output_format:
                     _output[output_format[col]] = val
-            _result.append({'input': _input, 'output': _output})
+            _result.append({'input': _input, 'output': _output, 'chunk': _format})
         return _result
     
     def to_json(self):
