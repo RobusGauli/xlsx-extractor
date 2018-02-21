@@ -12,6 +12,7 @@ class WorkSheetNotAvailableError(Exception):
         
 
 def must_have(config):
+    '''wrapper to verify the config json file'''
     def _wrapper(key):
         if key not in config:
             raise ValueError('{} is not provided in config file'.format(key))
