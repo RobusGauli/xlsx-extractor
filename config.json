@@ -1,18 +1,18 @@
 {
     "filename": "~/Desktop/data.xlsx",
     "path": "~/Desktop",
-    "worksheet": "3-Soil zone from CPT-RAW",
+    "worksheet": "5-Soil Zone from CPT-Final",
     "start_column": "B",
-    "end_column": "T",
+    "end_column": "V",
     "start_row": 23,
-    "end_row": 40,
+    "end_row": 50,
     "input": {
         "B": "depth",
-        "H": "qc",
-        "I": "fs"
+        "I": "qc",
+        "J": "fs"
     },
     "output": {
-        "T": "soil_zone",
-        "S": "ic"
+        "U": "soilZone",
+        "V": "ic"
     }
 }
